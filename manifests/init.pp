@@ -1,3 +1,3 @@
 class vhost {
-  include apache::config
+  include vhost::config
 }
