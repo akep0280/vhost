@@ -4,6 +4,6 @@ class vhost::config {
 
 apache::vhost {'akepley.example.com':
   port    => '80',
-  docroot => '/var/www/akepley',
+  docroot => '/var/www/html/akepley',
   }
 }
