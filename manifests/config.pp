@@ -7,4 +7,12 @@ apache::vhost {'akepley.example.com':
   docroot => '/var/www/html/akepley',
   options => ['FollowSymLinks','MultiViews'],
   }
+
+  file { '/var/www/html/akepley/helloworld.html':
+    ensure  => 'file',
+    owner   => 'apache',
+    group   => 'apache',
+    mode    => '0444',
+    source  => 'puppet:///modules/vhost/helloworld.html',
+    }
 }
