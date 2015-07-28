@@ -1,5 +1,5 @@
 class vhost::config {
-  class { 'apache': }
+  
 
 
 apache::vhost {'akepley.example.com':
